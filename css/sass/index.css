@@ -1,0 +1,81 @@
+/*
+Syntax error: Invalid CSS after "... $grid-columns ": expected "}", was "!global !default;"
+        on line 48 of neat/functions/_private.scss
+        from line 2 of neat/_neat-helpers.scss
+        from line 6 of neat/_neat.scss
+        from line 1 of index.sass
+
+43:     @return $grid-columns;
+44:   }
+45: }
+46: 
+47: @function container-shift($shift: $shift) {
+48:   $parent-columns: $grid-columns !global !default;
+49: 
+50:   @if length($shift) == 3 {
+51:     $container-columns: nth($shift, 3);
+52:     @return $container-columns;
+53:   }
+
+Backtrace:
+neat/functions/_private.scss:48
+neat/_neat-helpers.scss:2
+neat/_neat.scss:6
+index.sass:1
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1149:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:536:in `block'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:211:in `function_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:174:in `special_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:146:in `directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:274:in `to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin.rb:81:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:443:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:326:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:41:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/lib/sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.2.14/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"... $grid-columns \": expected \"}\", was \"!global !default;\"\A         on line 48 of neat/functions/_private.scss\A         from line 2 of neat/_neat-helpers.scss\A         from line 6 of neat/_neat.scss\A         from line 1 of index.sass\A \A 43:     @return $grid-columns;\A 44:   }\A 45: }\A 46: \A 47: @function container-shift($shift: $shift) {\A 48:   $parent-columns: $grid-columns !global !default;\A 49: \A 50:   @if length($shift) == 3 {\A 51:     $container-columns: nth($shift, 3);\A 52:     @return $container-columns;\A 53:   }"; }

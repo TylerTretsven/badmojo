@@ -1,0 +1,175 @@
+@import 'bourbon/bourbon', 'neat/neat'
+
+// Color Definitions
+$dark-grey: #393D3B
+$darker-blue: #525957
+// $darker-blue: #464F54
+$lighter-blue: #97A39E
+$blue: #1E5A71
+$orange: #C46748
+$darker-tan: #a7a494
+$tan: #fffcea
+
+// Color Usage
+$main-color: $tan
+$text-color: $dark-grey
+$background-color: $main-color
+$flavor: $lighter-blue
+
+// Typography
+$serif: "Times New Roman", times, serif
+$sans: "franklin-gothic-urw", "Franklin Gothic Medium", "Helvetica Neue", helvetica, arial, sans-serif
+$body: "franklin-gothic-urw", "Helvetica Neue", helvetica, arial, sans-serif
+
+body
+  color: $text-color
+  font-size: 1em
+  background-color: $background-color
+  font-family: $body
+  line-height: 1.6
+
+h1, h2, h3, h4, h5, h6
+  font-family: $sans
+  line-height: 1.2
+
+h1
+  color: $darker-blue
+  text-align: center
+  font-style: italic
+  font-weight: 300
+  margin-bottom: 0.75em
+
+p, li
+  font-size: 1.25em
+
+p
+  margin-bottom: 1.5em
+
+p:first-of-type
+  margin-top: 1em
+
+.dropcap
+  float: left
+  display: inline-block
+  color: $flavor
+  font-family: $sans
+  font-size: 3.5em
+  line-height: 1em
+  font-weight: 500
+  margin-top: -4px
+  padding-right: 4px
+  margin-bottom: -10px
+
+.dash
+  width: 15%
+  border-bottom: solid 2px $darker-blue
+  margin: 0 auto 2em auto
+  padding-top: 1em
+
+nav
+  ul
+    position: fixed
+    top: 0.875em
+    right: 0
+    background-color: rgb(25, 25, 25)
+    background-color: rgba(10, 10, 10, 0.85)
+    border-radius: 2px
+
+    li
+      display: inline-block
+      font-weight: 300
+      font-size: 1.375em
+      font-style: italic
+      padding: 0.5em 1.75em
+
+      a
+        color: $darker-tan
+
+    li.nav-logo
+      font-style: normal
+
+      a
+        color: $tan
+
+header
+  background-image: url(../img/concert.jpg)
+  background-size: cover
+  padding: 2em 4em 1em
+
+  h1
+    padding: 2em 0 0
+    color: $main-color
+    text-shadow: 12px 12px 0 $darker-blue, -15px -15px 0 $darker-blue
+    font-weight: 900
+    font-size: 7em
+    text-align: right
+    letter-spacing: -4px
+
+section
+  padding: 5em 0
+
+  &:first-of-type
+    padding-top: 6em
+
+  &:last-of-type
+    padding-bottom: 4em
+
+#tagline
+  
+  h1
+    text-align: center
+    line-height: 1
+    margin-bottom: 0
+
+  p 
+    padding: 0 9%
+    text-align: center
+
+#shows
+  background-color: $dark-grey
+
+  h1
+    color: $tan
+
+  table
+    width: 100%
+    border: none
+
+    thead tr
+      background-color:  $flavor
+
+      th 
+        color: #FCF9E9
+        font-weight: 500
+        font-style: italic
+
+    th
+      font-size: 2em
+      padding: 0.6667em
+
+    td
+      font-size: 1.25em
+      padding: 1em
+
+    tr
+      background: #F7F4E4
+    
+    tr:nth-of-type(even)
+      background: #EBE8D9
+
+#about
+  
+  ul
+    text-align: center
+    margin-top: 1em
+    
+    li
+      color: tint($text-color, 33.33%)
+      list-style: none
+      font-family: $sans
+
+#contact
+  background-color: $dark-grey
+
+  h1
+    color: $tan

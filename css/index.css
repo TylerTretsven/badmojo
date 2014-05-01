@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #393d3b;
+  font-size: 1em;
+  background-color: #fffcea;
+  font-family: "franklin-gothic-urw", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1.6; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "franklin-gothic-urw", "Franklin Gothic Medium", "Helvetica Neue", helvetica, arial, sans-serif;
+  line-height: 1.2; }
+
+h1 {
+  color: #525957;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 0.75em; }
+
+p, li {
+  font-size: 1.25em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+p:first-of-type {
+  margin-top: 1em; }
+
+.dropcap {
+  float: left;
+  display: inline-block;
+  color: #97a39e;
+  font-family: "franklin-gothic-urw", "Franklin Gothic Medium", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 500;
+  margin-top: -4px;
+  padding-right: 4px;
+  margin-bottom: -10px; }
+
+.dash {
+  width: 15%;
+  border-bottom: solid 2px #525957;
+  margin: 0 auto 2em auto;
+  padding-top: 1em; }
+
+nav ul {
+  position: fixed;
+  top: 0.875em;
+  right: 0;
+  background-color: #191919;
+  background-color: rgba(10, 10, 10, 0.85);
+  border-radius: 2px; }
+  nav ul li {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.375em;
+    font-style: italic;
+    padding: 0.5em 1.75em; }
+    nav ul li a {
+      color: #a7a494; }
+  nav ul li.nav-logo {
+    font-style: normal; }
+    nav ul li.nav-logo a {
+      color: #fffcea; }
+
+header {
+  background-image: url(../img/concert.jpg);
+  background-size: cover;
+  padding: 2em 4em 1em; }
+  header h1 {
+    padding: 2em 0 0;
+    color: #fffcea;
+    text-shadow: 12px 12px 0 #525957, -15px -15px 0 #525957;
+    font-weight: 900;
+    font-size: 7em;
+    text-align: right;
+    letter-spacing: -4px; }
+
+section {
+  padding: 5em 0; }
+  section:first-of-type {
+    padding-top: 6em; }
+  section:last-of-type {
+    padding-bottom: 4em; }
+
+#tagline h1 {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0; }
+#tagline p {
+  padding: 0 9%;
+  text-align: center; }
+
+#shows {
+  background-color: #393d3b; }
+  #shows h1 {
+    color: #fffcea; }
+  #shows table {
+    width: 100%;
+    border: none; }
+    #shows table thead tr {
+      background-color: #97a39e; }
+      #shows table thead tr th {
+        color: #fcf9e9;
+        font-weight: 500;
+        font-style: italic; }
+    #shows table th {
+      font-size: 2em;
+      padding: 0.6667em; }
+    #shows table td {
+      font-size: 1.25em;
+      padding: 1em; }
+    #shows table tr {
+      background: #f7f4e4; }
+    #shows table tr:nth-of-type(even) {
+      background: #ebe8d9; }
+
+#about ul {
+  text-align: center;
+  margin-top: 1em; }
+  #about ul li {
+    color: #7a7d7c;
+    list-style: none;
+    font-family: "franklin-gothic-urw", "Franklin Gothic Medium", "Helvetica Neue", helvetica, arial, sans-serif; }
+
+#contact {
+  background-color: #393d3b; }
+  #contact h1 {
+    color: #fffcea; }
